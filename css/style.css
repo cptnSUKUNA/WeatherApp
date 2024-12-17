@@ -1,0 +1,203 @@
+body {
+    background-color: var(--bg-color);
+}
+a{
+    text-decoration: none;
+}
+
+:root {
+    --bg-color: rgb(30, 32, 43);
+    --second-color: rgb(50, 53, 68);
+    --hover-color:rgb(0, 154, 216);
+    --main-text-color: rgb(255, 255, 255);
+    --second-text-color: rgb(191, 193, 200);
+}
+.sceondColor{
+   color:  var(--second-text-color);
+}
+
+.navbar{
+    padding: 50px 0 ;
+    background-color: var(--bg-color);
+}
+
+
+
+.logo img{
+    width: 64px;
+    height: 34px;
+    margin-right: 0.625rem;
+}
+.logo h1{
+   
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: var(--main-text-color);
+}
+.logo span{
+    font-size: 10px;
+    display: block;
+    color: var(--second-text-color);
+}
+.navbar-nav  .nav-item{
+    margin-left: 10px;
+}
+.navbar-nav  .nav-item.active .nav-link{
+    padding: 5px 25px;
+    border: 3px solid var(--hover-color) ;
+    border-radius: 30px;
+    color: var(--hover-color);
+}
+.navbar-nav  .nav-item .nav-link{
+    padding: 5px 25px;
+    border: 3px solid transparent ;
+    border-radius: 30px;
+    color: var(--main-text-color);
+    transition: 0.3s ease;
+    overflow: auto;
+
+}
+.navbar-nav  .nav-item .nav-link:hover{
+    border: 3px solid var(--hover-color) ;
+    color: var(--hover-color);
+}
+.navbar-toggler{
+    color: var(--main-text-color);
+    border: 2px solid transparent ;
+    padding: 20px;
+  
+}
+.navbar-toggler:hover{
+    color: var(--hover-color);
+    border: 2px solid var(--hover-color) ;
+    border-radius: 50%;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+/* -------------------end nav-------------------  */
+
+.search{
+    background-image: url(../imgs/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-block: 70px;
+    min-height: 350px;
+}
+.myinp{
+      padding: 20px 50px 20px 20px;
+      background-color: var(--bg-color);
+      color: var(--main-text-color);
+      outline: none;
+      border: none;
+      border-radius: 30px;
+
+}
+#searchBtn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 30px;
+    padding:0 40px;
+    color: var(--main-text-color);
+    background-color: var(--hover-color);
+    border: none;
+}
+
+.allCards .container .forecast-container{
+  
+    margin-top: -150px;
+    margin-bottom: 50px;
+}
+.mySecCard{
+    scale: 1;
+    filter: brightness(1);
+    transition: all 0.3s ease-in-out; 
+    background-color:#262936;
+}
+.myCard{
+    background-color: var(--second-color);
+    scale: 1;
+    filter: brightness(1);
+    transition: all 0.3s ease-in-out;
+}
+.headCard{
+    background-color:rgba(0, 0, 0, 0.2);
+}  
+.myCard:hover ,.mySecCard:hover{
+    scale: 1.06;
+    filter: brightness(1.2);
+  }
+
+footer{
+    background-color: var(--second-color);
+    padding: 50px 0;
+}
+.subscribeBtn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 30px;
+    padding:10px 40px;
+    color: var(--main-text-color);
+    background-color: var(--hover-color);
+    border: none;
+}
+.icons{
+     display: flex;   
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.icons a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    color: var(--hover-color);
+    transition: all 0.3s;
+    margin: 3px;
+    line-height: 2;
+}
+.icons a:hover{
+    background-color: var(--hover-color);
+    color: var(--main-text-color);
+}
+
+  @media (max-width :996px){
+    .navbar-collapse{
+        background-color: var(--second-color);
+        border-radius: 10px;
+    }
+    .navbar-nav  .nav-item.active .nav-link{
+        border: 0;
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+    }
+    .nav-item:not(:last-child) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .navbar-nav  .nav-item .nav-link{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        border: 0px solid transparent ;
+    }
+    .navbar-nav  .nav-item .nav-link:hover{
+        color: var(--hover-color);
+        border: 0px solid transparent ;
+    }
+
+    .icons{
+        margin-top: 10px;
+        justify-content: start;
+    }
+
+  }

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <a href="index.html" class="d-flex align-items-center">
+          <img src="imgs/logo@2x.png" alt="Weather" />
+          <div class="d-flex flex-column">
+            <h1>Weather</h1>
+            <span> tagline goes here</span>
+          </div>
+        </a>
+      </div>
+      <div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse mt-4 my-lg-0" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+          <li class="nav-item active"><a class="nav-link" href='index.html'>Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Live cameras</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Photos</a></li>
+          <li class="nav-item"><a class="nav-link" href='#'>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="search">
+    <div class="container">
+      <div class="position-relative ">
+        <input type="text" id="searchInp" class="w-100 myinp" placeholder="Find your location...">
+        <button id="searchBtn" class="searchBtn ">Find</button>
+      </div>
+
+    </div>
+  </section>
+  <section class="allCards">
+    <div class="container ">
+      <div class="forecast-container">
+        <div class="row g-3 " id="weatherArea">
+          <div class="col-md-4">
+            <div class="myCard rounded-4 text-white overflow-hidden">
+              <div class="headCard d-flex align-items-center justify-content-between text-center px-4  fw-medium">
+                <p class="day mt-2">Tuesday</p>
+                <p class="date  mt-2">10 December</p>
+              </div>
+              <div class="contentCard px-4">
+                <h2 class="city mt-5 fs-4 ">Alex</h2>
+                <p class="display-2 fw-bold">22<sup>o</sup>C</p>
+                <img src="imgs/119.webp" alt="status weather" class="w-25">
+                <p class="statu mt-3 fs-6 text-info">Clear</p>
+              </div>
+              <div class="footerCard">
+                <div class="wind px-4 mt-5 mb-3">
+                  <span class="me-4"><i class="fa-solid fa-umbrella me-2 sceondColor"></i> 20</span>
+                  <span class="me-4"><i class="fa-solid fa-wind me-2 sceondColor"></i> 30</span>
+                  <span><i class="fa-solid fa-compass me-2 sceondColor"></i> 40</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="myCard rounded-4 text-white overflow-hidden h-100">
+              <div class="headCard date color5 fw-medium d-flex justify-content-center px-4 ">
+                <p class="nextDay mt-2">Tuesday</p>
+              </div>
+              <div class="contentCard px-4 text-center mt-4">
+                <img src="imgs/119.webp" alt="status weather" class="w-25">
+                <p class="fs-2 fw-semibold mb-0 mt-4">22<sup>o</sup>C</p>
+                <small class="fs-5 opacity-75">22<sup>o</sup></small>
+                <p class="statu mt-4 fs-6 text-info">Clear</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="myCard rounded-4 text-white overflow-hidden h-100">
+              <div class="headCard date color5 fw-medium d-flex justify-content-center px-4 ">
+                <p class="nextDay mt-2">Tuesday</p>
+              </div>
+              <div class="contentCard px-4 text-center mt-4">
+                <img src="imgs/119.webp" alt="status weather" class="w-25">
+                <p class="fs-2 fw-semibold mb-0 mt-4">22<sup>o</sup>C</p>
+                <small class="fs-5 opacity-75">22<sup>o</sup></small>
+                <p class="statu mt-4 fs-6 text-info">Clear</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="position-relative ">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="position-relative">
+              <input type="text" class="w-100 myinp" placeholder="Enter your email to subscribe...">
+              <button class="subscribeBtn  ">Subscribe</button>
+            </div>
+
+          </div>
+          <div class="col-md-4">
+            <div class="icons ">
+              <a href="#" class=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class=""><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class=""><i class="fa-brands fa-google-plus"></i></a>
+              <a href="#" class=""><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+        <p class=" mt-3 sceondColor">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+  </footer>
+
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
